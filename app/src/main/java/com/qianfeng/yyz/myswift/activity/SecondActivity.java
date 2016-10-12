@@ -1,6 +1,7 @@
 package com.qianfeng.yyz.myswift.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import com.qianfeng.yyz.myswift.R;
 import com.qianfeng.yyz.myswift.api.MyApi;
+import com.qianfeng.yyz.myswift.bean.second.GiftSecondBean;
 import com.qianfeng.yyz.myswift.fragment.second.SecondGiftFragment;
 import com.qianfeng.yyz.myswift.fragment.second.SecondOpenFragment;
 
@@ -33,7 +35,7 @@ public class SecondActivity extends AppCompatActivity {
     public static final int TYPE_OPEN_FU = 2;
     public static final int TYPE_OPEN_CE = 3;
     public static final int TYPE_OPEN_Hot = 4;
-
+    public SecondGiftFragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,7 @@ public class SecondActivity extends AppCompatActivity {
                 //设置name
                 mName.setText(gName);
                 mShare.setVisibility(View.VISIBLE);
-                Fragment fragment = new SecondGiftFragment();
+                fragment = new SecondGiftFragment();
                 Bundle bundle = new Bundle();
                 String path = String.format(MyApi.GiftApi.GIFT_DETAL,mId);
                 bundle.putString("path",path);
@@ -104,5 +106,16 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void share(View view) {
+
+       GiftSecondBean bean =  fragment.mGiftSecondBean;
+        if (bean!=null){
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.putExtra(Intent.EXTRA_TEXT,bean.getInfo().getGname());
+            //intent.putExtra(Intent.EXTRA_SUBJECT,"share");
+            intent.setType("text/plain");
+            startActivity(Intent.createChooser(intent,"分享到"));
+        }
     }
 }

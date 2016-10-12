@@ -62,6 +62,14 @@ public class SpecialLeftDetalActivity extends AppCompatActivity implements BeanC
     }
 
     public void search(View view) {
+        if (mDesc==null){
+            return;
+        }
+        Intent intent = new Intent();
+        intent.putExtra(Intent.EXTRA_TEXT,mDesc);
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        startActivity(Intent.createChooser(intent,"分享到"));
     }
 
     @Override

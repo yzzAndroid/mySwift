@@ -47,7 +47,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class SecondGiftFragment extends Fragment implements BeanCallBack,IGetGiftCallback{
 
     private String mPath;
-    private GiftSecondBean mGiftSecondBean;
+    public GiftSecondBean mGiftSecondBean;
     @BindView(R.id.gift_second_img)
     ImageView mImageViewBackground;
     @BindView(R.id.second_cirimg)
