@@ -107,6 +107,9 @@ public class SecondOpenFragment extends Fragment implements BeanCallBack{
 
     @OnClick(R.id.open_second_download)
     public void onclick(){
+        if (mOpenSecondBean==null){
+            return;
+        }
         Intent intent = new Intent(Intent.ACTION_VIEW);
         String uri = mOpenSecondBean.getApp().getDownload_addr();
         if (TextUtils.isEmpty(uri)){
