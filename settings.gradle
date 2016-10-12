@@ -1,0 +1,2 @@
+include ':app', ':FlycoTabLayout_Lib'
+include ':library'

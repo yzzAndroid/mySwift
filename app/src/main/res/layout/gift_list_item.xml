@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:id="@+id/gift_item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/gift_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gift_item_app_name"
+        />
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/gift_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/gift_item_img"
+        />
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/gift_item_app_num"
+        android:text="@string/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/gift_item_img"
+        />
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/gift_item_app_num_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gift_item_app_num"
+        android:layout_alignParentBottom="true"
+
+        />
+    <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gift_item_time"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/gift_item_app_num_real"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/gift_item_btn"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="@string/gift_button_text"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/head_tab"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/opence_item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/opence_item_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:layout_alignTop="@id/opence_item_img"
+        android:layout_toRightOf="@id/opence_item_img"
+        />
+
+    <com.qianfeng.yyz.myswift.view.WatchView
+        android:id="@+id/opence_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/opence_item_img"
+        android:layout_toRightOf="@id/opence_item_img"
+        >
+    </com.qianfeng.yyz.myswift.view.WatchView>
+
+
+    <TextView
+        android:id="@+id/opence_item_net"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:text="@string/net_name"
+        android:layout_alignTop="@id/opence_item_img"
+        android:layout_alignBottom="@id/opence_item_img"
+        android:layout_toRightOf="@id/opence_item_img"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:layout_alignTop="@id/opence_item_img"
+        android:layout_alignBottom="@id/opence_item_img"
+        android:gravity="center_vertical"
+        android:id="@+id/opence_item_net_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_toRightOf="@id/opence_item_net"
+        />
+    <Button
+        android:id="@+id/opence_button_check"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/openfu_button_text"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/hot_top_item_img"
+        android:layout_width="90dp"
+        android:scaleType="centerCrop"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:id="@+id/hot_top_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="17sp"
+        android:layout_alignTop="@id/hot_top_item_img"
+        android:layout_toRightOf="@id/hot_top_item_img"
+        />
+
+    <TextView
+        android:id="@+id/hot_top_item_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/hot_top_item_img"
+        android:layout_alignBottom="@id/hot_top_item_img"
+        android:gravity="center_vertical"
+        android:text="@string/hot_type"
+        android:layout_toRightOf="@id/hot_top_item_img"
+        />
+    <TextView
+        android:id="@+id/hot_top_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/hot_top_item_img"
+        android:layout_alignBottom="@id/hot_top_item_img"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/hot_top_item_type_text"
+        />
+
+    <TextView
+        android:id="@+id/hot_top_item_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hot_top_item_img"
+        android:layout_toRightOf="@id/hot_top_item_img"
+        android:text="@string/hot_size"
+        />
+    <TextView
+        android:id="@+id/hot_top_item_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hot_top_item_img"
+        android:layout_toRightOf="@id/hot_top_item_size_text"
+        />
+    <TextView
+        android:id="@+id/hot_top_item_people_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/hot_people"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/hot_top_item_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/hot_top_item_people_text"
+        />
+
+</RelativeLayout>

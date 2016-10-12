@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.yyz.myswift.fragment.open.OpenCeFragment">
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/opence_rcv"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.v7.widget.RecyclerView>
+
+   <ProgressBar
+       android:visibility="visible"
+       android:id="@+id/open_ce_progress"
+       android:layout_gravity="center"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       />
+
+</FrameLayout>

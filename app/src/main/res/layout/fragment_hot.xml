@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qianfeng.yyz.myswift.fragment.HotFragment">
+
+<RelativeLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:background="@color/timebackground"
+    android:layout_height="0dp">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hot_text_top"
+        android:gravity="center_vertical"
+        />
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="9"
+        android:id="@+id/hot_top_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/timebackground"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hot_text_bottom"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="3"
+        android:id="@+id/hot_bottom_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

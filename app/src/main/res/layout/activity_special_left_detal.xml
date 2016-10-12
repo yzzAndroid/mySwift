@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.yyz.myswift.activity.SpecialLeftDetalActivity">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+           android:background="@color/head_tab"
+           android:layout_width="match_parent"
+           android:layout_height="40dp">
+           <RelativeLayout
+               android:onClick="back"
+               android:layout_width="40dp"
+               android:layout_height="match_parent">
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@mipmap/back"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               />
+           </RelativeLayout>
+
+           <TextView
+               android:id="@+id/special_left_second_title"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:textSize="17sp"
+               android:textColor="@color/white"
+               />
+           <RelativeLayout
+               android:layout_alignParentRight="true"
+               android:onClick="search"
+               android:layout_width="40dp"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/share"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   />
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:id="@+id/special_left_second_img"
+           android:scaleType="centerCrop"
+           android:layout_margin="10dp"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/special_left_second_read"
+           />
+
+       <com.qianfeng.yyz.myswift.view.MyGrideView
+           android:focusable="false"
+           android:focusableInTouchMode="false"
+           android:numColumns="4"
+           android:id="@+id/special_left_second_giv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </com.qianfeng.yyz.myswift.view.MyGrideView>
+   </LinearLayout>
+</ScrollView>

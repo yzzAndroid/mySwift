@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="30dp">
+
+
+    <com.qianfeng.yyz.myswift.view.WatchView
+        android:padding="5dp"
+        android:id="@+id/openfu_item1_watch_view"
+        android:layout_width="match_parent"
+        android:background="@color/timebackground"
+        android:layout_height="wrap_content"
+        app:msize="6sp"
+        >
+    </com.qianfeng.yyz.myswift.view.WatchView>
+
+</RelativeLayout>

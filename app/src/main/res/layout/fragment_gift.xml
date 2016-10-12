@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.yyz.myswift.fragment.GiftFragment">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:id="@+id/gift_fragment_lv"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_above="@+id/gift_fragment_lv_fresh"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrAnimationStyle="flip"
+        />
+
+
+    <TextView
+    android:layout_alignParentBottom="true"
+    android:id="@+id/gift_fragment_lv_fresh"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="@string/fresh"
+        android:visibility="gone"
+    android:background="@color/timebackground"
+    android:gravity="center"
+
+    />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbr"
+        />
+
+</RelativeLayout>

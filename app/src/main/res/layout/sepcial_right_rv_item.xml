@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/special_right_item_text0"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/timebackground"
+        />
+
+    <ImageView
+        android:layout_below="@id/special_right_item_text0"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/special_right_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+       android:layout_alignBottom="@id/special_right_item_img"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/special_bottom"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/special_right_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/special_right_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:civ_border_overlay="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/special_right_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/timebackground"
+        />
+
+
+</RelativeLayout>

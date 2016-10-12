@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/special_right_head_bc"
+            android:scaleType="centerCrop"
+            />
+
+    <RelativeLayout
+        android:background="@color/special_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <RelativeLayout
+        android:id="@+id/special_right_head_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/special_left_second_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        />
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/special_right_head_share"
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/share"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/special_right_head_author"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/head_tab"
+
+        />
+<TextView
+    android:layout_margin="10dp"
+    android:textColor="@color/white"
+    android:background="@drawable/special_right_head_read"
+    android:id="@+id/special_right_head_read"
+    android:layout_width="match_parent"
+    android:minHeight="50dp"
+    android:layout_height="wrap_content">
+</TextView>
+
+
+</LinearLayout>
+</RelativeLayout>
